@@ -2,13 +2,15 @@
   "name": "api4-project",
   "version": "1.0.0",
   "scripts": {
-    "start": "node index.js"
+    "start": "node index.js",
+    "server": "nodemon index.js"
   },
   "devDependencies": {
     "@eslint/js": "^9.9.1",
     "eslint": "^9.9.1",
     "eslint-plugin-react": "^7.35.0",
-    "globals": "^15.9.0"
+    "globals": "^15.9.0",
+    "nodemon": "^3.1.4"
   },
   "dependencies": {
     "cors": "^2.8.5",

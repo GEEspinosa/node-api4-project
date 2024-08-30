@@ -1,15 +1,10 @@
-const express = require('express');
-
-const server = express();
-
-server.use(express.json());
-
-server.get('/hello', (req, res) => {
-    res.json('hello')
-})
+require('dotenv').config()
 
 
-const port = process.env.PORT || 9000
+
+const server = require('./api/server.js')
+
+const port = process.env.PORT || 9000 //fall back port
 
 server.listen(port, () => {
     console.log(`listening on port ${port}`)
